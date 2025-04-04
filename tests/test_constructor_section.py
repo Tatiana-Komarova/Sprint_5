@@ -9,8 +9,8 @@ class TestConstructor:
         driver.find_element(*Locators.SOUS).click()
         driver.find_element(*Locators.BULKI).click()
 
-        bulki_visible = driver.find_element(*Locators.BULKI).text
-        assert bulki_visible == "Булки"
+        active_tab = driver.find_element(*Locators.ACTIVE_TAB).text
+        assert active_tab == "Булки"
 
 
     def test_constructor_sous(self, driver):
@@ -18,13 +18,13 @@ class TestConstructor:
         driver.find_element(*Locators.CONSTRUCTOR_BUTTON).click()
         driver.find_element(*Locators.SOUS).click()
 
-        sous_visible = driver.find_element(*Locators.SOUS).text
-        assert sous_visible == "Соусы"
+        active_tab = driver.find_element(*Locators.ACTIVE_TAB).text
+        assert active_tab == "Соусы"
 
     def test_constructor_nachinky(self, driver):
         driver.find_element(*Locators.PERSONAL_ACCOUNT_LINK).click()
         driver.find_element(*Locators.CONSTRUCTOR_BUTTON).click()
         driver.find_element(*Locators.NACHINKI).click()
 
-        nachinky_visible = driver.find_element(*Locators.NACHINKI).text
-        assert nachinky_visible == "Начинки"
+        active_tab = driver.find_element(*Locators.ACTIVE_TAB).text
+        assert active_tab == "Начинки"
