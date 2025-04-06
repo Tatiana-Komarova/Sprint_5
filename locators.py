@@ -30,3 +30,5 @@ class Locators:
     RESTORE_PASSWORD_BUTTON = ("xpath", "//a[text()='Восстановить пароль']") # Кнопка Восстановить пароль
     LOGIN_BUTTON_RESTORE_FORM = ("xpath", "//a[@href='/login' and text()='Войти']") # Кнопка входа на странице восстановления пароля
     INVALID_PASSWORD_ERROR = ("xpath", "//p[contains(text(), 'Некорректный пароль')]") # Ошибка при некорректном пароле
+
+    ACTIVE_TAB = ("xpath", "//div[contains(@class, 'tab_tab_type_current')]")
